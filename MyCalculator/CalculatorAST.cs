@@ -119,5 +119,10 @@ namespace MyCalculator
         {
             return Node.Calculate();
         }
+
+        public override string ToString()
+        {
+            return $"( {Node} )";
+        }
     }
 }

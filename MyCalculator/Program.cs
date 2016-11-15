@@ -11,7 +11,7 @@ namespace MyCalculator
         static void Main(string[] args)
         {
             var parser = new MyParserParser();
-            parser.Parse("1+3*2-7%5");
+            parser.Parse("(1+3)*2-7%5");
             Console.WriteLine($"The result is: {parser.Expression} = {parser.Expression.Calculate()}");
         }
     }
